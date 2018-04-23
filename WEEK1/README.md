@@ -1,5 +1,4 @@
 #Import python in C
->
 > 
 ##Python (food.py)
 Import Requsest to get the information from website and import BeatifulSoup to reorganize data
