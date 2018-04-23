@@ -11,7 +11,7 @@ server: ubuntu 16.04.4
 ![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/software.png)
 ## Development progress
 
-1. Day 1: use c to call the python
+1. Week 1: use c to call the python
 
 	import request and BeautifulSoup to get the data form internet and use c to call the python to search data.
 
