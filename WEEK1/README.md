@@ -1,12 +1,12 @@
-#Import python in C
+# Import python in C
 > 
-##Python (food.py)
+## Python (food.py)
 Import Requsest to get the information from website and import BeatifulSoup to reorganize data
 
-##C code (food.c)
+## C code (food.c)
 include Python.h and use c code to call the python.
 
-##Compile
+## Compile
 We compile the c code, which contain the header file (Python.h)
 
 
