@@ -16,3 +16,7 @@ Linux on Ubuntu
 
 ## Reference
 [C調用python](http://www.cnblogs.com/bracken/archive/2013/05/23/3094534.html)
+
+[在C中調用Python程序](http://blog.e3rp4y.me/2015/08/07/call-python-from-c-I/)
+
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/)
