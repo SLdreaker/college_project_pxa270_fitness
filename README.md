@@ -8,6 +8,7 @@ client(Development board): creator_pxa270
 server: ubuntu 16.04.4
 
 ## Software Architecture
+![](https://imgur.com/PJcaz3V)
 ## Development progress
 
 1. Day 1: use c to call the python
