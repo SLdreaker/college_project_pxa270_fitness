@@ -8,7 +8,7 @@ client(Development board): creator_pxa270
 server: ubuntu 16.04.4
 
 ## Software Architecture
-![](https://github.com/SLdreaker/college_project_pxa270_fitness)
+![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/software.png)
 ## Development progress
 
 1. Day 1: use c to call the python
