@@ -11,9 +11,9 @@ server: ubuntu 16.04.4
 ![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/software.png)
 
 ## Screen shoot
-![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/chat_client.png)
+![](https://github.com/SLdreaker/college_project_pxa270_fitness/blob/master/image/chat_client.JPG)
 
-![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/chat_server.png)
+![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/chat_server.JPG)
 
 ## Development progress
 
