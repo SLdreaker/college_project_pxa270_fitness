@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>picture/diet.jpg</file>
+        <file>picture/fitness.jpg</file>
+        <file>picture/chatroom.jpg</file>
+    </qresource>
+</RCC>
