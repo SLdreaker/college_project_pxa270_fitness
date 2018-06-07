@@ -10,6 +10,8 @@
 #include <sys/types.h>
 #include <signal.h>
 #include <QTimer>
+#include <QDate>
+#include <QTime>
 
 #define BUFSIZE 1024
 #define NUMTHREADS 3
@@ -22,8 +24,8 @@ char *member="";
 char temp_for_chatroom[BUFSIZE] = "";
 char* send_text="Hello";
 pid_t tid;  //
-int count2 = 0;
-char *arr_3[3];
+int count2 = 0, count4 = 0;
+char *arr_3[3], *arr_4[4];
 int refresh = 0;
 int send_data = 0;
 QByteArray byteArray;
@@ -148,6 +150,64 @@ void* connect_thread(void* ui)
 //                 memset(rcv, 0, BUFSIZE);    //clear data
 //                 memset(snd, 0, BUFSIZE);    //clear data
             }
+            else if(rcv[0] == '3')
+            {
+                count2 = 0;
+                arr_3[count2] = strtok(rcv, ",");
+
+                while(arr_3[count2] != NULL)
+                {
+                      count2 = count2 + 1;
+                      arr_3[count2] = strtok(NULL, ",");
+                 }
+                member = arr_3[1];
+                chat_data_from_other = arr_3[2];
+
+                n = sprintf(snd, "100");
+
+                  if(( n = write(connfd, snd, n)) == -1)
+                       errexit("Error: write() \n");
+                  refresh = 1;
+
+            }
+            else if(rcv[0] == '4')
+            {
+                count2 = 0;
+                arr_3[count2] = strtok(rcv, ",");
+
+                while(arr_3[count2] != NULL)
+                {
+                      count2 = count2 + 1;
+                      arr_3[count2] = strtok(NULL, ",");
+                 }
+                member = arr_3[1];
+                chat_data_from_other = arr_3[2];
+
+                n = sprintf(snd, "100");
+
+                  if(( n = write(connfd, snd, n)) == -1)
+                       errexit("Error: write() \n");
+                  refresh = 1;
+            }
+            else if(rcv[0] == '5')
+            {
+                count2 = 0;
+                arr_3[count2] = strtok(rcv, ",");
+
+                while(arr_3[count2] != NULL)
+                {
+                      count2 = count2 + 1;
+                      arr_3[count2] = strtok(NULL, ",");
+                 }
+                member = arr_3[1];
+                chat_data_from_other = arr_3[2];
+
+                n = sprintf(snd, "100");
+
+                  if(( n = write(connfd, snd, n)) == -1)
+                       errexit("Error: write() \n");
+                  refresh = 1;
+            }
          }
          ::close(connfd);
          ::close(sockfd);
@@ -204,7 +264,10 @@ void Server::checkchatroom()
         QString content_r = QString::fromUtf8(chat_data_from_other);
         QString menber_r = QString::fromUtf8(member);
         QString test(send_text);
-        ui->TB_chatroom->append(menber_r + content_r);
+        QDate dt_now = QDate::currentDate();
+        QTime tm_now = QTime::currentTime();
+
+        ui->TB_chatroom->append(menber_r + content_r + "    " + dt_now.toString("yyyy/MM/dd") + " " + tm_now.toString("hh:mm:ss"));
         refresh = 0;
         memset(chat_data_from_other, 0, strlen(chat_data_from_other));    //clear data
         memset(member, 0, strlen(member));    //clear data
