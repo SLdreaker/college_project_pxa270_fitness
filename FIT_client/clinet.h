@@ -20,6 +20,11 @@ private slots:
     void on_Buttom_Fitness_clicked();
     void invisible();
     void visible();
+    void invisible_diet();
+    void visible_diet();
+    void invisible_FIT();
+    void visible_FIT();
+    void clear_FIT();
 
     void on_Button_Diet_clicked();
 
@@ -32,6 +37,16 @@ private slots:
     void on_Button_connect_clicked();
 
     void checkchatroom();
+
+    void on_Button_back_diet_clicked();
+
+    void on_Button_calculate_clicked();
+
+    void on_Button_send_FIT_clicked();
+
+    void on_Button_day_FIT_clicked();
+
+    void on_Button_back_FIT_clicked();
 
 private:
 
