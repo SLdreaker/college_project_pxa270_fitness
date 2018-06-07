@@ -7,17 +7,29 @@ client(Development board): creator_pxa270
 
 server: ubuntu 16.04.4
 
-GUI: QT framework
-
 LCD: MTLCD‐0708048 LCD Module
 
 ## Software Architecture
-![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/software.png)
 
-## Screenshot
-![](https://github.com/SLdreaker/college_project_pxa270_fitness/blob/master/image/chat_client.JPG)
+Development environment: QT creator
 
-![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/chat_server.JPG)
+GUI: QT framework
+
+version: QT 4.8.6
+
+## Function
+
+1. Fitness
+
+Type height, weight, gender, age. Then, calculate the BMR. Afterwards, type loss weight goal, sport which want to do, and exercise how long, then count out how long you must exercise. 
+
+2. Diet
+
+Type weight, height and how many time exercise a week. Then, calculate the TDEE, so user can check how many kcal can eat a day.
+
+3. Chatroom
+
+Client can chat with other user or administrator. Exchange some advice of exercise and diet. 
 
 ## Development progress
 
@@ -26,6 +38,28 @@ LCD: MTLCD‐0708048 LCD Module
 ~~import request and BeautifulSoup to get the data form internet and use c to call the python to search data.~~
 
 1. Add chatroom
+
+2. Add diet
+
+3. Add Fitness
+
+## Screenshot
+
+1. Fitness
+
+![](https://github.com/SLdreaker/college_project_pxa270_fitness/blob/master/image/client_FIT.JPG)
+
+2. Diet
+
+![](https://github.com/SLdreaker/college_project_pxa270_fitness/blob/master/image/client_diet.JPG)
+
+1. Chatroom
+
+![](https://github.com/SLdreaker/college_project_pxa270_fitness/blob/master/image/chat_client.JPG)
+
+![](https://github.com/SLdreaker/college_project_pxa270_fitness/raw/master/image/chat_server.JPG)
+
+
 	
 ## Reference
 
